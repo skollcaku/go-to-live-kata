@@ -27,7 +27,7 @@ To check the Wordpress is correctly installed and deployed see if it exists /var
 1 DB instance of type MySQL (of type m1.small for exercise purpose) in a security group (inbound accepts connection via TCP, port 3306, ESCLUSIVELY from the Webserver(s)). 
 You can connect to the db instance ONLY FROM THE Webserver instance via any client installed in the Webserver (already mysql client installed).
 To connect via SSH to the database use (username xpeppersuser):
-sudo mysql -h <host-db.instance.eu-west-1.rds.amazonaws.com> -P 3306 -u xpeppersuser -p
+sudo mysql -h host-db.instance.eu-west-1.rds.amazonaws.com -P 3306 -u xpeppersuser -p
 then the password requested
 
 To show list of databases enter from mysql client:
