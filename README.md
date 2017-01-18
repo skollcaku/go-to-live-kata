@@ -16,7 +16,7 @@ The template used is in the aws_cloudformation folder.
 
 The architecture is composed from:
 
-1 ELB (name: XpeppersS-ElasticL-4DEM1BHAMS3N) available in 3 Availability Zones, which actually points to the Webserver (XpeppersStack-Test).
+1 ELB (name: XpeppersS-ElasticL-4DEM1BHAMS3N) available in 3 Availability Zones, which actually points to the Apache (httpd) Webserver (XpeppersStack-Test).
 
 3 subnets (one for each AZ)
 
