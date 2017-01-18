@@ -31,6 +31,6 @@ sudo mysql -h host-db.instance.eu-west-1.rds.amazonaws.com -P 3306 -u xpeppersus
 then the password requested
 
 To show list of databases enter from mysql client:
-mysql> show satabases;
+mysql> show databases;
 
 You will see the wordpressdb database in the list.
