@@ -1,6 +1,8 @@
 Go to live! kata
 ==================================
 
+README 
+
 In order to automate and provision the infrastructure requested by the XPeppers exercise, I have used AWS Cloudformation as the tool.
 I tested it in my AWS account (for security purposes, an existing .PEM certificate has been used to access via SSH the instance). 
 
