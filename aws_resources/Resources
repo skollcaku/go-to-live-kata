@@ -1,7 +1,7 @@
 Resources
 ============================
 
-The resources created and usefull for this CloudFormation template are (in a table format):
+The resources created and usefull for this CloudFormation template are (in a table format or csv):
 
 LOGICAL ID, PHYSICAL ID, TYPE
 DBInstance, xd15wr3exd022oq, AWS::RDS::DBInstance		
