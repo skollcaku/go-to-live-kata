@@ -1,0 +1,9 @@
+Outputs
+===============================
+
+After the design and execution of the XpeppersTemplate in AWS CloudFormation, the following output has been created:
+
+Key: WebsiteURL
+Value: http://XpeppersS-ElasticL-4DEM1BHAMS3N-260184950.eu-west-1.elb.amazonaws.com/wordpress
+
+It is the link to the Website where a full empty Wordpress can be initiated (you can choose site title, username and password).

@@ -1,0 +1,12 @@
+Resources
+============================
+
+The resources created and usefull for this CloudFormation template are (in a table format):
+
+LOGICAL ID, PHYSICAL ID, TYPE
+DBInstance, xd15wr3exd022oq, AWS::RDS::DBInstance		
+DBSecurityGroup, xpeppersstack-dbsecuritygroup-fmelg3ld8fi3, AWS::RDS::DBSecurityGroup	
+ElasticLoadBalancer, XpeppersS-ElasticL-4DEM1BHAMS3N, AWS::ElasticLoadBalancing::LoadBalancer	
+LaunchConfig, XpeppersStack-LaunchConfig-5X0BZ4JN9OZ7, AWS::AutoScaling::LaunchConfiguration	
+WebServerGroup, XpeppersStack-WebServerGroup-1AD4ZB94C37FX, AWS::AutoScaling::AutoScalingGroup	
+WebServerSecurityGroup, XpeppersStack-WebServerSecurityGroup-IGJCZVG2227J, AWS::EC2::SecurityGroup
