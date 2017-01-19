@@ -2,6 +2,7 @@ Go to live! kata
 ==================================
 
 README 
+******
 
 In order to automate and provision the infrastructure requested by the XPeppers exercise, I have used AWS Cloudformation as the tool.
 I tested it in my AWS account (for security purposes, an existing .PEM certificate has been used to access via SSH the instance). 
@@ -15,6 +16,7 @@ The template used is in the aws_cloudformation folder.
 
 
 The architecture is composed from:
+**********************************
 
 1 ELB (name: XpeppersS-ElasticL-4DEM1BHAMS3N) available in 3 Availability Zones, which actually points to the Apache (httpd) Webserver (XpeppersStack-Test).
 
@@ -25,7 +27,9 @@ Webserver is supported from an AutoScaling Configuration (min 1 and max 5 instan
 To check the Wordpress is correctly installed and deployed see if it exists /var/www/html/wordpress. 
 
 1 DB instance of type MySQL (of type m1.small for exercise purpose) in a security group (inbound accepts connection via TCP, port 3306, ESCLUSIVELY from the Webserver(s)). 
-You can connect to the db instance ONLY FROM THE Webserver instance via any client installed in the Webserver (already mysql client installed).
+You can connect to the db instance ONLY from the Webserver instance via any client installed in the Webserver (already mysql client installed).
+This MySQL DB is used by WordPress to store and retrieve all your blog or website information. WordPress uses it to organize and store all the important data from your website (posts, pages, images, tags, comments etc etc).
+
 To connect via SSH to the database use (username xpeppersuser):
 sudo mysql -h host-db.instance.eu-west-1.rds.amazonaws.com -P 3306 -u xpeppersuser -p
 then the password requested
