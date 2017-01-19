@@ -23,6 +23,7 @@ The architecture is composed from:
 
 1 instance t2.micro which is the Webserver (name: XpeppersStack-Test), accessible from TCP HTTP port 80 and via TCP SSH with the private key consoft_pair.pem
 Webserver is supported from an AutoScaling Configuration (min 1 and max 5 instances, of type t2.micro, in case EC2 healthchecks fail). It assures that a minimum of 1 instance is always ON (no AutoScaling policy applied) and lauched automatically. The new instances respects the Webserver security group settings in the default VPC.
+About VPC: The VPC (network base is a CIDR /16) and the CloudFormation template creates actually 3 subnets of length /20 (however, 16 subnets could be created, maybe for organization future growth!).
 To check the Wordpress is correctly installed and deployed see if it exists /var/www/html/wordpress. 
 
 1 DB instance of type MySQL (of type m1.small for exercise purpose) in a security group (inbound accepts connection via TCP, port 3306, ESCLUSIVELY from the Webserver(s)). 
